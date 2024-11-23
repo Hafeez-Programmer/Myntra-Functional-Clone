@@ -31,7 +31,7 @@ function displayItems() {
           <span class="original-price">Rs ${item.original_price}</span>
           <span class="discount">(${item.discount_percentage}% OFF)</span>
         </div>
-        <button class="btn-add-bag" onclick="
+        <button class="btn btn-outline-success rounded w-100 mt-2" onclick="
           addToBag(${item.id});
           displayBagCount();
         ">Add to Bag</button>
@@ -45,6 +45,7 @@ function displayItems() {
 function addToBag(itemID) {
   bagItems.push(itemID);
   localStorage.setItem('myntra_bag_items', JSON.stringify(bagItems));
+  alert("Item has been added to your cart Successfully✅")
 }
 
 function displayBagCount() {

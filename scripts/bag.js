@@ -64,6 +64,7 @@ function bagItemHtml(item) {
 function removeBagItem(itemID) {
   bagItems = bagItems.filter(bagItemID => bagItemID != itemID);
   localStorage.setItem('myntra_bag_items', JSON.stringify(bagItems));
+  alert("Item has been removed from your cart Successfully✅");
   onload();
 }
 

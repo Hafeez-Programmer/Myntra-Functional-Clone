@@ -290,8 +290,9 @@ header {
 }
 
 .btn-add-bag:hover {
-  background-color: forestgreen;
-  font-weight: 600;
+  color: black;
+  background-color: white;
+  border: 2px solid #90ee90;
 }
 
 .bag-item-count {
